@@ -1,6 +1,9 @@
 #!/bin/sh
 set -e
 
+echo "update database"
+glyphsets update-db GF_glyphsets/*/*/*.glyphs
+
 echo "clean-up"
 rm -rf ./*/nam ./*/txt ./*/glyphs/*.plist
 
